@@ -3,7 +3,6 @@ from flask import Flask, request
 
 def send_message():
     list = ['+###########']
-    message = 'Hello'
     for i in list:
         pywhatkit.sendwhatmsg(i, "Проверяла работу приложения", 13, 27)
     # pywhatkit.sendwhatmsg_to_group_instantly(phone=mobile, message=message)
